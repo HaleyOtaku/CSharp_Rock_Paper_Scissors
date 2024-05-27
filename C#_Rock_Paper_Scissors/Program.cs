@@ -7,6 +7,7 @@ namespace C__Rock_Paper_Scissors
     {
         static void Main(string[] args)
         {
+
             int playerScore = 0;
             int enemyScore = 0;
 
