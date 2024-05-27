@@ -18,6 +18,23 @@ namespace C__Rock_Paper_Scissors
                 Console.WriteLine("Player score - " + playerScore + " | Enemy Score - " + enemyScore);
                 Console.WriteLine("Please enter...\n\nr) Rock\np) Paper\nany other letter) Scissors\n\n");
                 string playerChoice = Console.ReadLine();
+
+                //Range below is 0-2, because the second value in a Random is exclusive.
+                int enemyChoice = random.Next(0,3);
+
+                if (enemyChoice == 0)
+                {
+                    Console.WriteLine("Enemy Chooses Rock!");
+                }
+                else if(enemyChoice == 1)
+                {
+                    Console.WriteLine("Enemy Chooses Paper!");
+                }
+                else
+                {
+                    Console.WriteLine("Enemy Chooses Scissors!");
+                }
+
             }
         }
     }
