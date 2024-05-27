@@ -25,6 +25,23 @@ namespace C__Rock_Paper_Scissors
                 if (enemyChoice == 0)
                 {
                     Console.WriteLine("Enemy Chooses Rock!");
+
+                    switch (playerChoice.ToLower())
+                    {
+                        case "r":
+                            Console.WriteLine("Tie!");
+                            break;
+
+                        case "p":
+                            Console.WriteLine("Player Wins This Round!");
+                            playerScore++;
+                            break;
+
+                        default:
+                            Console.WriteLine("Enemy Wins This Round!");
+                            enemyScore++;
+                            break;
+                    }
                 }
                 else if(enemyChoice == 1)
                 {
