@@ -24,63 +24,72 @@ namespace C__Rock_Paper_Scissors
 
                 if (enemyChoice == 0)
                 {
-                    Console.WriteLine("Enemy Chooses Rock!");
+                    Console.WriteLine("\nEnemy Chooses Rock!\n");
 
                     switch (playerChoice.ToLower())
                     {
                         case "r":
-                            Console.WriteLine("Tie!");
+                            Console.WriteLine("\nTie!\n");
                             break;
 
                         case "p":
-                            Console.WriteLine("Player Wins This Round!");
+                            Console.WriteLine("\nPlayer Wins This Round!\n");
                             playerScore++;
                             break;
 
                         default:
-                            Console.WriteLine("Enemy Wins This Round!");
+                            Console.WriteLine("\nEnemy Wins This Round!\n");
                             enemyScore++;
                             break;
                     }
                 }
                 else if(enemyChoice == 1)
                 {
-                    Console.WriteLine("Enemy Chooses Paper!");
+                    Console.WriteLine("\nEnemy Chooses Paper!\n");
 
                     switch (playerChoice.ToLower())
                     {   case "r":
-                            Console.WriteLine("Enemy Wins This Round!");
+                            Console.WriteLine("\nEnemy Wins This Round!\n");
                             enemyScore++;
                             break;
                         case "p":
-                            Console.WriteLine("Tie!");
+                            Console.WriteLine("\nTie!\n");
                             break;
                         default:
-                            Console.WriteLine("Player Wins This Round!");
+                            Console.WriteLine("\nPlayer Wins This Round!\n");
                             playerScore++;
                             break;
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Enemy Chooses Scissors!");
+                    Console.WriteLine("\nEnemy Chooses Scissors!\n");
 
                     switch (playerChoice.ToLower())
                     {   
                         case "r":
-                            Console.WriteLine("Player Wins This Round!");
+                            Console.WriteLine("\nPlayer Wins This Round!\n");
                             playerScore++;
                             break;
                         case "p":
-                            Console.WriteLine("Enemy Wins This Round!");
+                            Console.WriteLine("\nEnemy Wins This Round!\n");
                             enemyScore++;
                             break;
                         default:
-                            Console.WriteLine("Tie!");
+                            Console.WriteLine("\nTie!\n");
                             break;
                     }
                 }
 
+            }
+
+            if (playerScore == 3)
+            {
+                Console.WriteLine("\n\nYou win!");
+            }
+            else
+            {
+                Console.WriteLine("\n\nYou lose!");
             }
         }
     }
