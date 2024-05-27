@@ -7,7 +7,7 @@ namespace C__Rock_Paper_Scissors
     {
         static void Main(string[] args)
         {
-
+            Random random = new Random();
             int playerScore = 0;
             int enemyScore = 0;
 
@@ -16,6 +16,8 @@ namespace C__Rock_Paper_Scissors
             while (playerScore != 3 && enemyScore != 3)
             {
                 Console.WriteLine("Player score - " + playerScore + " | Enemy Score - " + enemyScore);
+                Console.WriteLine("Please enter...\n\nr) Rock\np) Paper\nany other letter) Scissors\n\n");
+                string playerChoice = Console.ReadLine();
             }
         }
     }
